@@ -21,6 +21,7 @@ const MainHomePage: FC<PropsType> = () => {
       <HomeTemplate>
         <ReactMapGL
           {...viewport}
+          mapStyle={'mapbox://styles/alvinhhhh/ckpv80jir02h818mr5ha0x0pd'}
           mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN}
           onViewportChange={nextViewport => setViewport(nextViewport)}
         />
