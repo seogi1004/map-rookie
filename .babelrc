@@ -1,0 +1,27 @@
+{
+  "env": {
+    "development": {
+      "compact": false,
+      "presets": ["next/babel"]
+    },
+    "production": {
+      "compact": true,
+      "presets": ["next/babel"]
+    },
+    "test": {
+      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]]
+    }
+  },
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
+}

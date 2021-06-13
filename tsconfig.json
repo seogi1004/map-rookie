@@ -1,0 +1,80 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "paths": {
+      "@interfaces/*": [
+        "src/client/interfaces/*"
+      ],
+      "@models/*": [
+        "src/client/models/*"
+      ],
+      "@providers/*": [
+        "src/client/providers/*"
+      ],
+      "@errors/*": [
+        "src/client/errors/*"
+      ],
+      "@constants/*": [
+        "src/client/constants/*"
+      ],
+      "@env/*": [
+        "src/client/env/*"
+      ],
+      "@enums/*": [
+        "src/client/enums/*"
+      ],
+      "@components/*": [
+        "src/client/components/*"
+      ],
+      "@repositories/*": [
+        "src/client/repositories/*"
+      ],
+      "@contexts/*": [
+        "src/client/contexts/*"
+      ],
+      "@stores/*": [
+        "src/client/stores/*"
+      ],
+      "@utils/*": [
+        "src/client/utils/*"
+      ],
+      "@externals/*": [
+        "src/client/externals/*"
+      ],
+      "@decorators/*": [
+        "src/client/decorators/*"
+      ],
+      "@libs/*": [
+        "src/client/libs/*"
+      ],
+      "@styles/*": [
+        "src/client/styles/*"
+      ],
+      "@assets/*": [
+        "public/assets/*"
+      ]
+    }
+  },
+  "exclude": [".next", "src/server/**/*.*"],
+  "include": ["next-env.d.ts", "style.d.ts", "**/*.ts", "**/*.tsx"]
+}
